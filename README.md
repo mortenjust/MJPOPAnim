@@ -2,11 +2,11 @@
 Facebook POP animations easily take up 5-6 lines of code. MJPOPAnim does it in one line.
 
 ### Usage
-####
+#### Simple
 ```swift
 MJPOPSpring(view: myNSView, propertyName: kPOPLayerPositionY, toValue: 0)
 ```
-####
+#### Advanced
 ```swift
 MJPOPSpring(view: myNSView, 
           propertyName: kPOPLayerPositionY, 
