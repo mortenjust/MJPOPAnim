@@ -22,7 +22,7 @@ MJPOPSpring(view: myNSView,
 ```
 
 #### Super advanced
-If you want to set properties that are not in the initializer, like `completionBlock`, you can do this: 
+If you want to set properties that are not in the initializer, like `completionBlock`, you can set `runNow` to as `false` 
 
 ```swift
 var anim = MJPOPSpring(view: myNSView, propertyName: kPOPLayerPositionY, toValue: 0, runNow:false)
