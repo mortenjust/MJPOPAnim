@@ -2,11 +2,11 @@
 Facebook POP animations easily take up 5-6 lines of code. MJPOPAnim does it in one line.
 
 ### Usage
-Simple: 
+####
 ```swift
 MJPOPSpring(view: myNSView, propertyName: kPOPLayerPositionY, toValue: 0)
 ```
-Advanced: 
+####
 ```swift
 MJPOPSpring(view: myNSView, 
           propertyName: kPOPLayerPositionY, 
@@ -19,6 +19,15 @@ MJPOPSpring(view: myNSView,
           dynamicsFriction: 6, 
           dynamicsMass: 43, 
           animationName: "jumptobottom")
+```
+
+#### Super advanced
+If you want to set properties that are not in the initializer, like `completionBlock`, you can do this: 
+
+```swift
+var anim = MJPOPSpring(view: myNSView, propertyName: kPOPLayerPositionY, toValue: 0, runNow:false)
+anim.completionBlock = {...}
+myNSView.layer?.pop_add...etc
 ```
 
 ### Installation
